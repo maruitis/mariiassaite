@@ -157,19 +157,38 @@ button{
     min-height: 50vh;
     padding: 40px;
 }
+.main-button-row {
+    display: inline-block;
+    font-family: "Bungee",sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 15px 30px;    
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+    color: rgb(168,212,255);
+    transition: all 0.4s ease;
+    gap: 40px;
+    justify-content: center;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 .main-button{
     display: inline-block;
     font-family: "Bungee",sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: rgb(168,212,255);
     background-color: white;
-    border-radius: 60px;
-    padding: 40px 60px;
+    border-radius: 50px;
+    padding: 30px 50px;
     transition: all 0.4s ease;
-    
-    
-        
+    justify-content: center;       
 }
 .main-button:hover {
     transform: scale(1.1);
@@ -250,4 +269,32 @@ animation: floatUp 8s linear infinite;
 }
 html {
     scroll-behavior: smooth;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+     background-color: rgb(212,120,219); 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer; 
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: rgb(170,80,176); 
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    color: white;
+    justify-content: center;
+}
+
+input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active {
+   transform: scale(0.95);
+   justify-content: center;
 }
